@@ -1,0 +1,121 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <sys:String x:Key="ResourceDictionaryName">en-US</sys:String>
+
+    <sys:String x:Key="Mode">Mode</sys:String>
+    <sys:String x:Key="DisableProxy">Disable</sys:String>
+    <sys:String x:Key="PacProxy">PAC</sys:String>
+    <sys:String x:Key="GlobalProxy">Global</sys:String>
+    <sys:String x:Key="NoProxy">No modify</sys:String>
+
+    <sys:String x:Key="UpdatePac">Update PAC</sys:String>
+    <sys:String x:Key="UpdateLanPac">Lan IP list</sys:String>
+    <sys:String x:Key="UpdateChnDomainPac">Chn Domain list</sys:String>
+    <sys:String x:Key="UpdateChnDomainIpPac">Chn Domain and IP list</sys:String>
+    <sys:String x:Key="UpdateChnIpPac">Chn IP list</sys:String>
+    <sys:String x:Key="UpdateGfwList">GFWList</sys:String>
+    <sys:String x:Key="UpdateChnOnlyPac">Chn Only list</sys:String>
+    <sys:String x:Key="CopyPacUrl">Copy PAC URL</sys:String>
+    <sys:String x:Key="EditPacFile">Edit local PAC file...</sys:String>
+    <sys:String x:Key="EditGfwListUserRule">Edit user rule for GFWList...</sys:String>
+
+    <sys:String x:Key="ProxySetting">Proxy setting</sys:String>
+    <sys:String x:Key="ProxyRule">Proxy rule</sys:String>
+    <sys:String x:Key="BypassLan">Bypass LAN</sys:String>
+    <sys:String x:Key="BypassLanChina">Bypass LAN &amp;&amp; China</sys:String>
+    <sys:String x:Key="BypassLanNotChina">Bypass LAN &amp;&amp; not China</sys:String>
+    <sys:String x:Key="UserCustom">User custom</sys:String>
+    <sys:String x:Key="DisableBypass">Disable bypass</sys:String>
+
+    <sys:String x:Key="Servers">Servers</sys:String>
+    <sys:String x:Key="EditServers">Edit servers...</sys:String>
+    <sys:String x:Key="ScanQrCode">Scan QRCode from screen...</sys:String>
+    <sys:String x:Key="ImportSsrLinksFromClipboard">Import links from clipboard...</sys:String>
+    <sys:String x:Key="ImportServers">Import servers from file...</sys:String>
+    <sys:String x:Key="LoadBalance">Load balance</sys:String>
+    <sys:String x:Key="SameHostForSameAddress">Same host for same address</sys:String>
+    <sys:String x:Key="ServerStatistic">Server statistic...</sys:String>
+    <sys:String x:Key="DisconnectCurrent">Disconnect current</sys:String>
+
+    <sys:String x:Key="ServersSubscribe">Subscription</sys:String>
+    <sys:String x:Key="SubscribeSetting">Setting</sys:String>
+    <sys:String x:Key="UpdateSubscribeSsrNode">Update</sys:String>
+
+    <sys:String x:Key="ShowLogs">Show logs...</sys:String>
+    <sys:String x:Key="UpdateAvailable">Update available</sys:String>
+
+    <sys:String x:Key="More">More</sys:String>
+    <sys:String x:Key="GlobalSettings">Global settings...</sys:String>
+    <sys:String x:Key="DnsSettings">DNS settings...</sys:String>
+    <sys:String x:Key="PortSettings">Port settings...</sys:String>
+    <sys:String x:Key="OpenWiki">Open wiki...</sys:String>
+    <sys:String x:Key="Feedback">Feedback...</sys:String>
+    <sys:String x:Key="Donate">Donate...</sys:String>
+    <sys:String x:Key="GenQrCode">Gen custom QRCode...</sys:String>
+    <sys:String x:Key="Update">Update...</sys:String>
+    <sys:String x:Key="CheckUpdate">Check update</sys:String>
+    <sys:String x:Key="AutoCheckUpdate">Auto check update</sys:String>
+    <sys:String x:Key="AllowPreRelease">Include prerelease version</sys:String>
+
+    <sys:String x:Key="Quit">Quit</sys:String>
+
+    <sys:String x:Key="NewVersionNotFound">No newer version was found</sys:String>
+    <sys:String x:Key="NewVersionFound">{0} {1} Update Found</sys:String>
+    <sys:String x:Key="ClickMenuToDownload">Click menu to download</sys:String>
+    <sys:String x:Key="NewVersionAvailable">New version {0} {1} available</sys:String>
+    <sys:String x:Key="NewVersionFoundFailed">Check for update failure</sys:String>
+
+    <sys:String x:Key="UnexpectedError">Unexpected error, ShadowsocksR will exit.</sys:String>
+    <sys:String x:Key="SuccessiveInstancesMessage1">Find Shadowsocks icon in your notify tray.</sys:String>
+    <sys:String x:Key="SuccessiveInstancesMessage2">If you want to start multiple Shadowsocks, make a copy in another directory.</sys:String>
+    <sys:String x:Key="SuccessiveInstancesCaption">ShadowsocksR is already running</sys:String>
+
+    <sys:String x:Key="NewServer">New server</sys:String>
+
+    <sys:String x:Key="PortInUse">Port {0} already in use</sys:String>
+    <sys:String x:Key="PortReserved">Port {0} is reserved by system</sys:String>
+    <sys:String x:Key="PortOutOfRange">Port out of range</sys:String>
+
+    <sys:String x:Key="ControllerError">ShadowsocksR Error: {0}</sys:String>
+
+    <sys:String x:Key="Colon" xml:space="preserve">: </sys:String>
+
+    <sys:String x:Key="OneByOne">OneByOne</sys:String>
+    <sys:String x:Key="Random">Random</sys:String>
+    <sys:String x:Key="FastDownloadSpeed">FastDownloadSpeed</sys:String>
+    <sys:String x:Key="LowLatency">LowLatency</sys:String>
+    <sys:String x:Key="LowException">LowException</sys:String>
+    <sys:String x:Key="SelectedFirst">SelectedFirst</sys:String>
+    <sys:String x:Key="Timer">Timer</sys:String>
+
+    <sys:String x:Key="BalanceInGroup">Balance in group</sys:String>
+    <sys:String x:Key="AutoBan">AutoBan</sys:String>
+
+    <sys:String x:Key="RunningPort">Running: Port {0}</sys:String>
+
+    <sys:String x:Key="UpdatePacFailed">Failed to update PAC file</sys:String>
+    <sys:String x:Key="GfwListPacUpdated">GFWList PAC updated</sys:String>
+    <sys:String x:Key="PacUpdated">PAC updated</sys:String>
+    <sys:String x:Key="GfwListPacNotFound">No updates found. Please report to GFWList if you have problems with it.</sys:String>
+    <sys:String x:Key="PacNotFound">No updates found.</sys:String>
+
+    <sys:String x:Key="Success">Success</sys:String>
+    <sys:String x:Key="Error">Error</sys:String>
+
+    <sys:String x:Key="UpdateSubscribeSuccess">Update subscribe {0} success</sys:String>
+    <sys:String x:Key="UpdateSubscribeFailure">Update subscribe {0} failure</sys:String>
+
+    <sys:String x:Key="QrCodeNotFound">No QRCode found. Try to zoom in or move it to the center of the screen.</sys:String>
+
+    <sys:String x:Key="EmptySubtag">[Empty subscription remarks]</sys:String>
+    <sys:String x:Key="EmptyGroup">[Empty group name]</sys:String>
+
+    <sys:String x:Key="ImportConfigFailed">Import servers failed</sys:String>
+    <sys:String x:Key="DefaultConfigMessage">Default configuration detected</sys:String>
+    <sys:String x:Key="DefaultConfigQuestion">Tap ‘Yes’ to open config window or ‘No’ to open subscription window</sys:String>
+
+    <sys:String x:Key="Socks5">Socks5(support UDP)</sys:String>
+    <sys:String x:Key="Http">Http tunnel</sys:String>
+    <sys:String x:Key="TcpPortTunnel">TCP Port tunnel</sys:String>
+</ResourceDictionary>
