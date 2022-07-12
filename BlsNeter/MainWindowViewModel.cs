@@ -8,6 +8,7 @@ using Shadowsocks.Model;
 using Shadowsocks.Util;
 using System;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Net.Http;
 using System.Net.NetworkInformation;
@@ -84,6 +85,7 @@ namespace BlsNeter
         public RelayCommand GlobalCheckedCommand { get; set; }
         public RelayCommand PacCheckedCommand { get; set; }
         public RelayCommand ExitApplicationCommand { get; set; }
+        public RelayCommand OpenGitAddressCommand { get; set; }
         private readonly IConfiguration _configuration;
 
         public MainWindowViewModel(IConfiguration configuration)
@@ -94,6 +96,7 @@ namespace BlsNeter
             GlobalCheckedCommand = new RelayCommand(UseGlobalMode);
             PacCheckedCommand = new RelayCommand(UsePacMode);
             ExitApplicationCommand = new RelayCommand(Exit);
+            OpenGitAddressCommand = new RelayCommand(OpenGitAddress);
             _configuration = configuration;
             GlobalModeChecked = true;
             PacModeChecked = false;
@@ -135,6 +138,25 @@ namespace BlsNeter
                 });
             }
             Loaded = true;
+        }
+
+        private void OpenGitAddress() 
+        {
+            string url = "http://github.com/BruceQiu1996/WPFScienceSurfing";
+            using (Process p = new Process())
+            {
+                p.StartInfo.FileName = "cmd.exe";
+                p.StartInfo.UseShellExecute = false;    //不使用shell启动
+                p.StartInfo.RedirectStandardInput = true;//喊cmd接受标准输入
+                p.StartInfo.RedirectStandardOutput = false;//不想听cmd讲话所以不要他输出
+                p.StartInfo.RedirectStandardError = true;//重定向标准错误输出
+                p.StartInfo.CreateNoWindow = true;//不显示窗口
+                p.Start();//向cmd窗口发送输入信息 后面的&exit告诉cmd运行好之后就退出
+                p.StandardInput.WriteLine("start " + url + "&exit");
+                p.StandardInput.AutoFlush = true;
+                p.WaitForExit();
+                p.Close();
+            }
         }
 
         private async Task RefreshDelayCommand()

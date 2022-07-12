@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Shadowsocks.Model;
+using System.IO;
 using System.Windows;
 
 namespace BlsNeter
